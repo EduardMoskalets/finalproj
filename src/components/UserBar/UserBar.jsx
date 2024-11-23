@@ -22,8 +22,8 @@ const UserBar = ({ name, avatarUrl }) => {
       { /* Всплывающее окно (popover) */ }
       {showPopover && (
         <div className={css.popover}>
-            <button className={css.inPopover}><span className={css.buttonSetting}>Setting</span></button>
-            <button className={css.inPopover}><span className={css.buttonLogOut}>Log out</span></button>
+            <button type="button" className={css.inPopover}><span className={css.buttonSetting}>Setting</span></button>
+            <button type="button" className={css.inPopover}><span className={css.buttonLogOut}>Log out</span></button>
         </div>
       )}
     </div>
