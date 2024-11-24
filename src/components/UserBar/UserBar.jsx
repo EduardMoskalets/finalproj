@@ -11,8 +11,8 @@ const UserBar = ({ name, avatarUrl }) => {
     setShowPopover(!showPopover);
   };
 
-    return (
-        <div className={css.user_button_container}>
+  return (
+    <div className={css.user_button_container}>
             <button className={css.user_button} onClick={togglePopover} ref={buttonRef}>
                 <span className={css.username}>{name}</span>
                 <img src={avatarUrl} alt="#" className={css.avatar} />
